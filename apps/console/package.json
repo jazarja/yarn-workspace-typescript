@@ -6,7 +6,7 @@
   },
   "scripts": {
     "build": "yarn run clean && yarn run compile",
-    "clean": "rimraf ./dist && rimraf ./tsconfig.buildinfo",
+    "clean": "rimraf ./dist && rimraf ./tsconfig.tsbuildinfo",
     "compile": "tsc --build",
     "test": "ts-node index.ts"
   }
