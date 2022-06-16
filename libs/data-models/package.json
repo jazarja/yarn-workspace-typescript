@@ -1,0 +1,22 @@
+{
+  "name": "@ywts/data-models",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn run clean && yarn run compile",
+    "clean": "rimraf ./dist && rimraf ./tsconfig.buildinfo",
+    "compile": "tsc --build && ncp .env dist/.env",
+    "test": "yarn run build"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0"
+  }
+}

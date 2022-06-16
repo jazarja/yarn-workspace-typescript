@@ -1,0 +1,13 @@
+{
+  "name": "console",
+  "packageManager": "yarn@3.2.1",
+  "dependencies": {
+    "@ywts/data-models": "*"
+  },
+  "scripts": {
+    "build": "yarn run clean && yarn run compile",
+    "clean": "rimraf ./dist && rimraf ./tsconfig.buildinfo",
+    "compile": "tsc --build",
+    "test": "ts-node index.ts"
+  }
+}
